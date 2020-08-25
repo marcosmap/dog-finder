@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Finder</title>
+  <!--BOOTSTRAP 4-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar bg-primary">
+    <h1>Dog Finder</h1>
+  </nav>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 text-center mt-4 d-flex flex-row flex-wrap align-items-center">
+        <h2 class="col-12">Find a picture of your favorite dog...</h2>
+        <div class="alerta col-12"></div>
+        <form action="" id="form" class="col-12 d-flex flex-row">
+          <div class="col-8 form-group">
+            <input type="text" id="dog" placeholder="Enter your favorite dog..." class="form-control mt-3" autofocus>
+          </div>
+          <div class="col-4">
+            <input type="submit" class="btn btn-primary form-control mt-3" id="searchBtn" value="Search">
+          </div>
+        </form>
+        <div id="dogs" class="col-12 text-center justify-content-center my-3"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/dog-api.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
